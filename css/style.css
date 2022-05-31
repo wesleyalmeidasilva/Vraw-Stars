@@ -1,0 +1,581 @@
+@font-face {
+    font-family: Nougat;
+    src: url(../fonts/Nougat-ExtraBlack.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(246, 189, 48);
+    height: 100%;
+    font-family: Nougat;
+}
+
+html {
+    box-shadow: 0rem 6.2rem inset;
+}
+
+img {
+    transform: skewX(6deg);
+}
+
+.bg-video {
+    position: fixed;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 230vh;
+}
+
+/* Container */
+
+.container {
+    width: 80vw;
+    min-width: 1300px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+/* Botão */
+
+.botao {
+    transform: skewX(-6deg);
+    border-radius: 6px;
+    background-color: rgb(52, 60, 79);
+    border: 3px solid black;
+    box-shadow: 0rem 0.35rem inset #6b6186, 0rem -0.4rem inset #292b39, 0rem 0.2rem rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.botao a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+/* ******* Icones ******* */
+
+/* Perfil */
+
+.bibi-icone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(6deg);
+    height: 5rem;
+    width: 5rem;
+}
+
+.player-name {
+    position: absolute;
+    top: 90%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    background: -webkit-linear-gradient(360deg , gold, orange, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Trofeis */
+
+.header-trofeis-topo {
+    align-items: center;
+}
+
+.header-trofeis-topo p {
+    float: left;
+    position: absolute;
+    left: 53%;
+    top: 20%;
+
+    font-size: 2rem;
+    color: #efba38;
+    text-shadow: 0.2rem 0.25rem black;
+}
+
+.icone-rank {
+    float: left;
+    width: 70px;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.icone-trofeu {
+    float: left;
+    margin-left: 2px;
+    margin-top: 20px;
+    width: 40px;
+}
+
+.icone-moeda {
+    position: absolute;
+    width: 40px;
+    top: -50%;
+    left: 96%;
+}
+
+.barra {
+    z-index: -1;
+    position: absolute;
+    top: 68%;
+    left: 4%;
+    width: 11rem;
+    height: 1.6rem;
+
+    box-shadow: 0rem 0.7rem inset #ec7425;
+    background-color: #d85c43;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+/* Estrela Roxa */
+
+.icone-estrela {
+    float: left;
+    position: absolute;
+    top:-22%;
+    left: -25%;
+    width: 80px;
+}
+
+.estrela-roxa p {
+    float: left;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+
+    font-size: 2.2rem;
+    color: #fdfdfd;
+}
+
+/* Moedas */
+
+.moeda-direita {
+    float: left;
+    position: absolute;
+    top:-22%;
+    left: -25%;
+    width: 80px;
+}
+
+.moeda p {
+    float: left;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+
+    font-size: 2.2rem;
+    color: #fdfdfd;
+}
+
+/* Gema */
+
+.icone-gema {
+    float: left;
+    position: absolute;
+    top:-22%;
+    left: -25%;
+    width: 80px;
+}
+
+.gema p {
+    float: left;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+
+    font-size: 2.2rem;
+    color: #fdfdfd;
+}
+
+/* Amigo */
+
+.icone-smile {
+    float: left;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    width: 45px;
+}
+
+.amigo p {
+    float: left;
+    position: absolute;
+    top: 26%;
+    left: 65%;
+    width: 45px;
+    color: #fdfdfd;
+
+    font-size: 2rem;
+    text-shadow: 0.2rem 0.25rem black;
+}
+
+/* Interativo */
+
+.icone-interativo {
+    float: left;
+    position: absolute;
+    top: 14%;
+    left: 25%;
+    width: 60px;
+}
+
+/* Menu Esquerdo */
+
+.menu-esquerdo img, 
+.menu-direito img {
+    position: absolute;
+    top: -50%;
+    left: 16%;
+    width: 70px;
+}
+
+.brawlers img,
+.amigos img {
+    width: 100px;
+    top: -40%;
+    left: 2%;
+}
+
+.clube img {
+    top: -30%;
+}
+
+.menu-esquerdo p,
+.menu-direito p {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fdfdfd;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-shadow: 0.2rem 0.25rem black;
+}
+
+.menu-direito .p-batepapo {
+    position: absolute;
+    left: 55%;
+}
+
+.p-batepapo {
+    display: block;
+    width: 100px;
+}
+
+/* Icones Inferiores */
+
+/* Brawl Pass */
+
+.icone-brawlpass {
+    position: absolute;
+    top: -70%;
+    left: -8%;
+    width: 250px;
+}
+
+.barra3 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 15rem;
+    height: 2rem;
+    background: #283044;
+    box-shadow: 0rem 1rem inset #202538;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.barra4 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 10rem;
+    height: 2rem;
+    background: #f17326;
+    border-radius: 4px;
+    border: 2px solid black;
+    box-shadow: 0rem 0.8rem inset #fde545;
+}
+
+.circulo2 {
+    box-shadow: 0 0 0.8rem inset #000000;
+    background-color: rgb(38, 49, 69);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 90%;
+    top: -35%;
+
+    border-radius: 50%;
+}
+
+.ficha {
+    position: absolute;
+    z-index: 1;
+    top: -35%;
+    left: -15%;
+}
+
+.nivel {
+    position: absolute;
+    z-index: 1;
+    top: -8%;
+    left: 92.5%;
+    font-size: 2rem;
+    color: #fdfdfd;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.experiencia {
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 30%;
+    color: #fdfdfd;
+    font-size: 1.5rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+/* Modo Combate */
+
+.modo-tempo {
+    position: absolute;
+    top: -20.5%;
+    left: 40%;
+    font-size: 1rem;
+    color: rgb(123, 131, 166);
+}
+
+.icone-exclamacao {
+    position: absolute;
+    width: 40px;
+    top: -38%;
+    left: 91%;
+}
+
+.icone-solitario {
+    position: absolute;
+    top: -5%;
+    left: 3%;
+    width: 80px;
+}
+
+.p-nomedomodo {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: #fdfdfd;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: 0.2rem 0.25rem black;
+    word-spacing: -8px;
+}
+
+.p-nomedomapa {
+    position: absolute;
+    top: 60%;
+    left: 26.5%;
+    color: #93db3e;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: 0.2rem 0.25rem black;
+}
+
+.icone-cogumelo {
+    position: absolute;
+    top: 44%;
+    left: 88%;
+    width: 45px;
+}
+
+
+
+/* Jogar */
+
+.icone-ficha2 {
+    position: absolute;
+    width: 40px;
+    top: -30%;
+    left: -3%;
+}
+
+.ficha-disponivel {
+    position: absolute;
+    top: -22%;
+    left: 8%;
+    font-size: 1.4rem;
+    color: rgb(123, 131, 166);
+}
+
+.ficha-tempo {
+    position: absolute;
+    top: -20.5%;
+    left: 42%;
+    font-size: 1.2rem;
+    color: rgb(123, 131, 166);
+}
+
+.p-jogar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #000;
+    color: #fdfdfd;
+    text-shadow: 0rem 0.3rem 0.3rem black;
+}
+
+/* Formatação do Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+/* Formatação do Main */
+
+.menus-centrais {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 480px;
+
+}
+
+.menu-esquerdo {
+    margin-top: 100px;
+}
+
+.menu-esquerdo .botao {
+    margin-top: 60px;
+    width: 7rem;
+    height: 4rem;
+}
+
+.menu-direito {
+    margin-top: 100px;
+}
+
+.menu-direito .botao {
+    margin-top: 60px;
+    width: 7rem;
+    height: 4rem;
+}
+
+/* Menu Inferior */
+
+.menus-inferiores {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brawlpass {
+    height: 6rem;
+    margin-top: 100px;
+    width: 22rem;
+}
+
+.inferior-direito {
+    display: flex;
+    flex-direction: row;
+}
+
+.mododecombate {
+    float: right;
+    width: 25rem;
+    height: 6rem;
+    margin-right: 20px;
+    margin-top: 100px;
+    box-shadow: 0rem -1.0rem, 0rem 0.35rem inset #6b6186, 0rem -0.4rem inset #292b39, 0rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+.jogar {
+    float: right;
+    width: 25rem;
+    height: 8rem;
+    margin-right: 20px;
+    margin-top: 68px;
+
+    background-color: #edc408;
+    box-shadow: 0rem -1.6rem black, 0rem 0.35rem inset #fde93b, 0rem -0.5rem inset #a55822, 0rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+/* Header Esquerdo */
+
+.header-esquerdo div {
+    float: left;
+    margin-right: 20px;
+}
+
+.header-icone {
+    width: 10rem;
+    height: 6.4rem;
+
+}
+
+/* Trofeis */
+
+.header-trofeis {
+    width: 14.4rem;
+    height: 6.4rem;
+}
+
+.header-trofeis-topo {
+    display: inline-block;
+}
+
+/* Header Direito */
+
+.header-direito div {
+    float: right;
+    margin-left: 40px;
+}
+
+.botão-interativo {
+    width: 7.2rem;
+    height: 4.8rem;
+}
+
+.amigo {
+    width: 5.6rem;
+    height: 4.8rem;
+}
+
+.gema {
+    width: 9.6rem;
+    height: 3.9rem;
+    background-color: #000000;
+    box-shadow: none;
+}
+
+.moeda {
+    width: 9.6rem;
+    height: 3.9rem;
+    background-color: #000000;
+    box-shadow: none;
+}
+
+.estrela-roxa {
+    width: 9.6rem;
+    height: 3.9rem;
+    background-color: #000000;
+    box-shadow: none;
+}
