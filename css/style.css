@@ -11,12 +11,11 @@
 
 body {
     background-color: rgb(246, 189, 48);
-    height: 100%;
     font-family: Nougat;
 }
 
 html {
-    box-shadow: 0rem 6.2rem inset;
+    box-shadow: 0rem 4rem inset;
 }
 
 img {
@@ -24,18 +23,23 @@ img {
 }
 
 .bg-video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    z-index: -10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 230vh;
+    top: 0;
+    left: 0;
 }
 
 /* Container */
 
 .container {
+    position: fixed;
     width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     min-width: 1300px;
     max-width: 1920px;
     margin: auto;
@@ -447,7 +451,8 @@ img {
 .header {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 /* Formatação do Main */
