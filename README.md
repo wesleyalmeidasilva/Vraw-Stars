@@ -16,4 +16,5 @@
 https://wesleyalmeidasilva.github.io/Vraw-Stars/
 <hr>
 ![image](https://user-images.githubusercontent.com/57848455/214647757-5b5da49c-1e5d-47a5-9255-c89a0e49e67e.png)
+<br>
 Feito por: https://github.com/wesleyalmeidasilva (Wesley Almeida Silva)
